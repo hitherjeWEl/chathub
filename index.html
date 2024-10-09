@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat-container">
+    <div id="user-info">
+      <input id="username" type="text" placeholder="Enter your name" required>
+      <select id="avatarSelect">
+        <option value="avatar1.png">Avatar 1</option>
+        <option value="avatar2.png">Avatar 2</option>
+        <option value="avatar3.png">Avatar 3</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <div id="chat-box">
+      <div id="messages"></div>
+    </div>
+    
+    <div id="input-area">
+      <input id="messageInput" type="text" placeholder="Type a message...">
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
